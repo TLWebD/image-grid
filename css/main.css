@@ -10,96 +10,79 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+}
 
-  color: #222;
+body {
+margin: 0;
+}
+
+img {
+width: 100%;
+display: block;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
-]
-
-body {
-  text-align: center;
 }
 
-img {
-  width: 100%;
-}
-
-body img:nth-child(2) {
+img:nth-child(2) {
   display: none;
 }
 
-body img:nth-child(4) {
+img:last-child {
   display: none;
 }
 
 @media only screen and (min-width: 25em) {
 
-  body img:nth-child(1) {
-    display: inline-block;
-    width: 48%;
+  img {
+    float: left;
+    width: 100%;
   }
 
-  body img:nth-child(2) {
-    display: inline-block;
-    width: 48%;
+  img:nth-child(2) {
+  display: block;
   }
 
-  body img:nth-child(3) {
-    display: inline-block;
-    width: 48%;
+  body img:last-child {
+  display: block;
   }
 
-  body img:nth-child(4) {
-    display: inline-block;
-    width: 48%;
+  body img:nth-child(5) {
+  display: inline-block;
+  width: 24%;
   }
 }
+
+img:nth-child(1)
+img:nth-child(2)
+img:nth-child(3)
+img:nth-child(4)
+img:nth-child(5) {
+  float: left;
+  width: 50%;
 
 @media only screen and (min-width: 38em) {
 
-  body img:nth-child(1) {
+  img:nth-child(2)
+  img:nth-child(3)
+  img:nth-child(4) {
+    width: 33.3333%
+  }
+
+  img:last-child {
     display: none;
-    width: 32%;
   }
 
-  body img:nth-child(2) {
-    display: inline-block;
-    width: 32%;
-  }
-
-  body img:nth-child(3) {
-    display: inline-block;
-    width: 32%;
-  }
-
-  body img:nth-child(4) {
-    display: inline-block;
-    width: 32%;
-  }
 }
-
 @media only screen and (min-width: 60em) {
 
-  body img:nth-child(1) {
-    display: inline-block;
-    width: 24%;
+  img:first-child {
+    width: 66.6666%;
   }
 
-  body img:nth-child(2) {
-    display: inline-block;
-    width: 24%;
+  body img:last-child {
+    display: block;
+    width: 33.3333%;
   }
-
-  body img:nth-child(3) {
-    display: inline-block;
-    width: 24%;
-  }
-
-  body img:nth-child(4) {
-    display: inline-block;
-    width: 24%;
-  }
-
 }
